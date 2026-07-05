@@ -11,6 +11,13 @@ It tracks revenue, orders, paid calls, reviews, costs, refunds, disputes, wallet
 - Core value: helps ASP builders prove traction and understand their business
 - Demo target: import sample X Layer/OKX.AI payments and generate a Revenue Rocket report
 
+Hackathon notes:
+
+- Campaign: OKX.AI Genesis, part of the X Layer Build X series.
+- Build goal: create an Agent Service Provider that solves a clear real-world use case.
+- Submission flow: list the ASP on OKX.AI, post a short X walkthrough with `#OKXAI`, then submit the project form before the deadline.
+- Official context: https://www.okx.com/xlayer/build-x-hackathon
+
 ## Problem
 
 Hackathon builders need to prove usage, revenue, and reviews quickly. ASP businesses also need organized records, receipts, and simple financial visibility without pretending to be full accounting software.
@@ -66,4 +73,3 @@ ASP Builder
 ## Status
 
 Hackathon planning repository. Implementation scaffold will add importers, classifier, dashboard, receipt generation, and reports.
-
