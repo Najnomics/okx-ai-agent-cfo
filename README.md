@@ -65,6 +65,36 @@ ASP Builder
 
 - `spec.md` - full product and technical specification
 - `README.md` - project overview and hackathon framing
+- `app/` - FastAPI service implementation
+- `tests/` - API tests
+- `Dockerfile` - production container
+- `okx-ai-listing.md` - marketplace listing draft
+- `DEMO_SCRIPT.md` - 90-second walkthrough script
+
+## Run Locally
+
+```bash
+uv run uvicorn app.main:app --reload
+```
+
+Then open:
+
+- API docs: `http://127.0.0.1:8000/docs`
+- MCP-style manifest: `http://127.0.0.1:8000/mcp`
+- Demo payloads: `http://127.0.0.1:8000/demo`
+
+## Test
+
+```bash
+uv run --extra dev pytest
+```
+
+## Production Notes
+
+- Set `AGENT_CFO_API_KEY` before exposing paid endpoints.
+- Deploy behind HTTPS before OKX.AI registration.
+- Use `AGENT_CFO_DATA_DIR` for persistent SQLite report storage.
+- Agent CFO organizes records and reports; it does not provide legal, tax, or investment advice.
 
 ## Contributor
 
@@ -72,4 +102,4 @@ ASP Builder
 
 ## Status
 
-Hackathon planning repository. Implementation scaffold will add importers, classifier, dashboard, receipt generation, and reports.
+Production-shaped MVP: transaction classifier, metrics engine, receipt generator, report generator, persistence, tests, Dockerfile, listing copy, and demo script are implemented.
